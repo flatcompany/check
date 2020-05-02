@@ -107,6 +107,10 @@
     color: #fff;
 }
 
+.elfsight-app-561b117-6ba0-40cb-8044-062be5d22f66 a {
+    display: none !important;
+}
+
 
 
 
@@ -227,3 +231,18 @@
     border-radius: 50px;
 }
 
+
+
+.foto {
+    width: 100%;
+    padding: 200px 0;
+    background-color: #374dafb9;
+}
+
+.title-foto {
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
