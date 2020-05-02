@@ -246,3 +246,50 @@
     letter-spacing: 2px;
     color: #fff;
 }
+
+.profile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.profile-img {
+    position:relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-img img {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    width:100px;
+    border-radius:50%;
+}
+
+.profile-img svg{
+    fill:none;
+    stroke:#8a3ab9;
+    stroke-linecap: round;
+    stroke-width:3;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+    animation: stroke-draw 6s ease-out infinite alternate; 
+}
+
+@keyframes stroke-draw {
+    from{
+      stroke:#8a3ab9;
+      stroke-dasharray: 1;
+    }
+    to{
+      stroke:#cd486b;
+      transform:rotate(180deg);
+      stroke-dasharray: 8;
+    }
+  }
+
+
