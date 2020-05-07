@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .main {
     position: relative;
     width: 100%;
@@ -61,6 +65,7 @@
     color: #fff;
     border: 2px solid #fff;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .main-button a:hover{
@@ -95,7 +100,7 @@
 
 .review {
     width: 100%;
-    padding: 200px 0;
+    padding: 100px 0;
     background-color: #374dafb9;
 }
 
@@ -107,10 +112,84 @@
     color: #fff;
 }
 
-.elfsight-app-561b117-6ba0-40cb-8044-062be5d22f66 a {
-    display: none !important;
+.cart-review {
+    margin-top: 20px;
+    margin: 0 20px;
+    width: 100%;
 }
 
+.cart-review-icon {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+}
+
+.cart-review-icon-box{
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #b5055b;
+    margin-bottom: 20px;
+}
+
+.cart-review-icon-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.right-icon {
+    flex-direction: row-reverse;
+}
+
+.foto-profile {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.cart-review-box {
+    background-color: #fff;
+    width: 100%;
+    /* min-height: 249px; */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.cart-review-box-title {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.cart-review-box-subtitle {
+    font-size: 12px;
+    color: rgb(56, 56, 56);
+    font-style: italic;
+    position: relative;
+}
+
+.cart-review-box-subtitle:before {
+    content: "\201C";
+    font-family: serif;
+    font-size: 30px;
+    line-height: 0;
+}
+
+.cart-review-box-subtitle:after {
+    content: "\201D";
+    font-family: serif;
+    font-size: 30px;
+    line-height: 0;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 5px;
+}
 
 
 
@@ -231,11 +310,9 @@
     border-radius: 50px;
 }
 
-
-
 .foto {
     width: 100%;
-    padding: 200px 0;
+    padding: 100px 0;
     background-color: #374dafb9;
 }
 
