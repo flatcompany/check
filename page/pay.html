@@ -15,14 +15,14 @@
                 
 
                 <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">    
-                    <input type="hidden" name="receiver" value="410012221009534"> //Номер кошелька в Яндекс.Деньгах, на который нужно зачислять деньги отправителей.
-                    <input type="hidden" name="paymentType" value="AC"> //Способ оплаты банковской картой
-                    <input type="hidden" name="sum" value="49" data-type="number"> //Сумма перевода (спишется с отправителя).  
-                    <input type="hidden" name="formcomment" value="Чек-лист молодой мамы">  //Название перевода в истории отправителя
-                    <input type="hidden" name="short-dest" value="Чек-лист молодой мамы">    //Название перевода на странице подтверждения
-                    <input type="hidden" name="label" value="$order_id">    //Метка
+                    <input type="hidden" name="receiver" value="410012221009534"> <!-- Номер кошелька в Яндекс.Деньгах, на который нужно зачислять деньги отправителей. -->
+                    <input type="hidden" name="paymentType" value="AC"> <!-- Способ оплаты банковской картой -->
+                    <input type="hidden" name="sum" value="49" data-type="number"> <!--Сумма перевода (спишется с отправителя). -->
+                    <input type="hidden" name="formcomment" value="Чек-лист молодой мамы">  <!-- Название перевода в истории отправителя -->
+                    <input type="hidden" name="short-dest" value="Чек-лист молодой мамы">   <!-- Название перевода на странице подтверждения -->
+                    <input type="hidden" name="label" value="$order_id">    <!-- Метка -->
                     <input type="hidden" name="quickpay-form" value="small">    
-                    <input type="hidden" name="targets" value="транзакция {order_id}"> // Назначение платежа   
+                    <input type="hidden" name="targets" value="транзакция {order_id}">  <!-- Назначение платежа -->
                        
                     <input type="hidden" name="comment" value="Хотелось бы получить дистанционное управление.">    
                     <input type="hidden" name="need-fio" value="true">    
