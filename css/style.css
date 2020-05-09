@@ -288,7 +288,7 @@ html {
   }
 
 .price-button {
-    padding-top: 50px;
+    padding-top: 30px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -297,7 +297,10 @@ html {
     background-color: #374daf;
 }
 
-.price-button a {
+.price-button input {
+    background-color: #fff;
+    outline: none;
+    border: none;
     letter-spacing: 2px;
     font-weight: 700;
     padding: 10px 20px;
@@ -305,7 +308,7 @@ html {
     color: #374daf;
 }
 
-.price-button a:hover {
+.price-button input:hover {
     color: #fff;
     border-radius: 50px;
 }
