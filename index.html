@@ -205,9 +205,25 @@
                                 <li>Товар 3</li>
                             </ul>
                         </div>
-                        <div class="price-button">
-                            <a class="normal-bg" href="https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=Check-list&InvId=0&Culture=ru&Encoding=utf-8&Description=%D0%A7%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82&OutSum=49&SignatureValue=d38fc7aed4fd6c48e09862c326fdcf86">Купить</a>
-                        </div>
+                        <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">    
+                            <input type="hidden" name="receiver" value="410012221009534"> <!-- Номер кошелька в Яндекс.Деньгах, на который нужно зачислять деньги отправителей. -->
+                            <input type="hidden" name="paymentType" value="AC"> <!-- Способ оплаты банковской картой -->
+                            <input type="hidden" name="sum" value="49" data-type="number"> <!--Сумма перевода (спишется с отправителя). -->
+                            <input type="hidden" name="formcomment" value="Чек-лист молодой мамы">  <!-- Название перевода в истории отправителя -->
+                            <input type="hidden" name="short-dest" value="Чек-лист молодой мамы">   <!-- Название перевода на странице подтверждения -->
+                            <input type="hidden" name="label" value="$order_id">    <!-- Метка -->
+                            <input type="hidden" name="quickpay-form" value="small">    
+                            <input type="hidden" name="targets" value="транзакция {order_id}">  <!-- Назначение платежа -->
+                               
+                            <input type="hidden" name="comment" value="Хотелось бы получить дистанционное управление.">    
+                            <input type="hidden" name="need-fio" value="true">    
+                            <input type="hidden" name="need-email" value="true">    
+                            <input type="hidden" name="need-phone" value="false">    
+                            <input type="hidden" name="need-address" value="false">    
+                            <div class="price-button">
+                                <input type="submit" value="Купить" class="normal-bg" class="vip-button">
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
@@ -222,9 +238,26 @@
                                 <li class="vip-li" >Товар 3</li>
                             </ul>
                         </div>
-                        <div class="price-button">
-                            <a class="vip-button" href="page/pay.html">Купить</a>
-                        </div>
+                        <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">    
+                            <input type="hidden" name="receiver" value="410012221009534"> <!-- Номер кошелька в Яндекс.Деньгах, на который нужно зачислять деньги отправителей. -->
+                            <input type="hidden" name="paymentType" value="AC"> <!-- Способ оплаты банковской картой -->
+                            <input type="hidden" name="sum" value="4999" data-type="number"> <!--Сумма перевода (спишется с отправителя). -->
+                            <input type="hidden" name="formcomment" value="Чек-лист молодой мамы">  <!-- Название перевода в истории отправителя -->
+                            <input type="hidden" name="short-dest" value="Чек-лист молодой мамы">   <!-- Название перевода на странице подтверждения -->
+                            <input type="hidden" name="label" value="$order_id">    <!-- Метка -->
+                            <input type="hidden" name="quickpay-form" value="small">    
+                            <input type="hidden" name="targets" value="транзакция {order_id}">  <!-- Назначение платежа -->
+                               
+                            <input type="hidden" name="comment" value="Хотелось бы получить дистанционное управление.">    
+                            <input type="hidden" name="need-fio" value="true">    
+                            <input type="hidden" name="need-email" value="true">    
+                            <input type="hidden" name="need-phone" value="false">    
+                            <input type="hidden" name="need-address" value="false">    
+                            <div class="price-button">
+                                <input type="submit" value="Купить" class="vip-button" class="vip-button">
+                            </div>
+                        </form>
+                        
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
@@ -239,9 +272,25 @@
                                 <li>Товар 3</li>
                             </ul>
                         </div>
-                        <div class="price-button">
-                            <a class="normal-bg" href="#">Купить</a>
-                        </div>
+                        <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">    
+                            <input type="hidden" name="receiver" value="410012221009534"> <!-- Номер кошелька в Яндекс.Деньгах, на который нужно зачислять деньги отправителей. -->
+                            <input type="hidden" name="paymentType" value="AC"> <!-- Способ оплаты банковской картой -->
+                            <input type="hidden" name="sum" value="499" data-type="number"> <!--Сумма перевода (спишется с отправителя). -->
+                            <input type="hidden" name="formcomment" value="Чек-лист молодой мамы">  <!-- Название перевода в истории отправителя -->
+                            <input type="hidden" name="short-dest" value="Чек-лист молодой мамы">   <!-- Название перевода на странице подтверждения -->
+                            <input type="hidden" name="label" value="$order_id">    <!-- Метка -->
+                            <input type="hidden" name="quickpay-form" value="small">    
+                            <input type="hidden" name="targets" value="транзакция {order_id}">  <!-- Назначение платежа -->
+                               
+                            <input type="hidden" name="comment" value="Хотелось бы получить дистанционное управление.">    
+                            <input type="hidden" name="need-fio" value="true">    
+                            <input type="hidden" name="need-email" value="true">    
+                            <input type="hidden" name="need-phone" value="false">    
+                            <input type="hidden" name="need-address" value="false">    
+                            <div class="price-button">
+                                <input type="submit" value="Купить" class="normal-bg" class="vip-button">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
